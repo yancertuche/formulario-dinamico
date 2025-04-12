@@ -13,7 +13,7 @@ const FormConfigManager = ({ onConfigChange }) => {
       formName,
       fields: fieldsConfig,
     });
-  }, [formName, fieldsConfig, onConfigChange]);
+  }, [formName, fieldsConfig]);
 
   const handleAddOrUpdateField = (fieldConfig) => {
     if (editingIndex === null) {
@@ -49,9 +49,9 @@ const FormConfigManager = ({ onConfigChange }) => {
 
   return (
     <div className="form-config-manager">
-      <h2>Configurador de Formulario</h2>
+      <h2>Creación de Formularios</h2>
       <div className="form-name-group">
-        <label htmlFor="formName">Nombre del Formulario:</label>
+        <label htmlFor="formName">Nombre del nuevo Formulario:</label>
         <input
           type="text"
           id="formName"

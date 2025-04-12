@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css';
+import './styles/App.css';
 import DynamicForm from './components/DynamicForm/DynamicForm';
 import FormConfigManager from './components/FormConfigManager/FormConfigManager';
 
@@ -19,6 +19,7 @@ function App(){
         <h1>Gestor de Formulario Dinámico</h1>
         <FormConfigManager onConfigChange={handleConfigChange} />
       </div>
+      <div className="separator"></div>
       <div className="preview-container">
         <h1>Vista Previa del Formulario</h1>
         <DynamicForm configuration={formConfig} />

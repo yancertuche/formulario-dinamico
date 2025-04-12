@@ -52,13 +52,14 @@ const FieldConfigForm = ({ onSubmit, initialValues, onCancel }) => {
     >
       {({ values }) => (
         <Form className="field-config-form">
+          <p>Agrega o modifica los campos que necesites a tu formulario, podrás gestionar los campos agregados en el apartado inferior Configuración Actual. </p>
           <div className="config-group">
-            <label htmlFor="label">Etiqueta:</label>
+            <label htmlFor="label">Nombre de la etiqueta:</label>
             <Field name="label" type="text" id="label" />
             <ErrorMessage name="label" component="div" className="error-message" />
           </div>
           <div className="config-group">
-            <label htmlFor="type">Tipo de Input:</label>
+            <label htmlFor="type">Tipo de entrada:</label>
             <Field as="select" name="type" id="type">
               <option value="text">Texto</option>
               <option value="number">Numérico</option>
