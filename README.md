@@ -43,3 +43,23 @@ el proyecto se compone de las siguientes carpetas y archivos relevantes:
         - **webComponents**: Componente donde se crea el webComponent del `DynamicForm` para que pueda ser reusable en otros proyectos.
     - **Styles**: Estilos globales.
     - **App.js**: Archivo del componente raíz
+
+## Capturas del resultado
+
+![Pantalla 1](capturas/PantallaInicial.jpg).
+
+![Pantalla 7](capturas/SeAsignaTitulo.jpg).
+
+![Pantalla 2](capturas/AgregarCampo.jpg).
+
+![Pantalla 3](capturas/CampoAgregado.jpg).
+
+![Pantalla 4](capturas/AgregarCampoNumerico.jpg).
+
+![Pantalla 5](capturas/CampoNumericoAgregado.jpg).
+
+![Pantalla 6](capturas/EditarCampo.jpg).
+
+![Pantalla 8](capturas/ValidaciónDelCampoVistaPrevia.jpg).
+
+![Pantalla 9](capturas/EnviarFormularioFInal.jpg).
