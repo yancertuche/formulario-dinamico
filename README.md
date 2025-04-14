@@ -1,25 +1,9 @@
-# Formulario dinámico
+# Formulario Dinámico Con React 19 Usando Formik y Yup
 
 Este proyecto se inició utilizando [Create React App](https://github.com/facebook/create-react-app).
 
-## Ejecución Local del proyecto
 
-En el directorio del proyecto, puedes ejecutar:
-
-### `npm install`
-
-Instala las dependencias necesarias para la ejecución del proyecto
-
-seguido por:
-
-### `npm start`
-
-Ejecuta la aplicación en modo de desarrollo de forma local.  
-Abre [http://localhost:3000](http://localhost:3000) para visualizarla en tu navegador.
-
-## Documentación
-
-### Descripción
+## Funcionalidades
 
 La aplicación consta de dos páneles. Del lado izquierdo está el configurador de formularios, con el cual se pueden realizar las siguientes acciones :
 
@@ -32,3 +16,30 @@ La aplicación consta de dos páneles. Del lado izquierdo está el configurador 
 y del lado derecho:
 
 - Un Pre Visualizador que muestra el formulario que vería el usuario final y que cumple con lo definido por el configurador. 
+
+## Instalación y Configuracion local
+
+1. Clona el repositorio y ubicarse en la raiz del proyecto:
+
+   ```bash
+   git clone https://github.com/yancertuche/formulario-dinamico.git
+   cd formulario-dinamico
+2. Instala las dependencias:
+    ```bash
+    npm install
+3. Inicia la aplicación:
+    ```bash
+    npm start
+4. Abre [http://localhost:3000](http://localhost:3000) para visualizarla en tu navegador y empieza a interactuar
+
+## Estructura del Proyecto
+
+el proyecto se compone de las siguientes carpetas y archivos relevantes:
+- **src**
+    - **Components**: Directorio donde se implementan los componentes reutilizables para la aplicación.
+        - **DynamicForm**: Componente encargado de interpretar y renderizar los formularios configurados desde el configurador.
+        - **FieldConfigForm**: Componente encargado de crear los distintos campos y sus parámetros para un formulario definidos por un usuario.
+        - **FormConfigManager**: Componente que orquesta el `FieldConfigForm` para crear una interfaz completa donde se configuren los campos y se gestiones la edición y/o eliminación.
+        - **webComponents**: Componente donde se crea el webComponent del `DynamicForm` para que pueda ser reusable en otros proyectos.
+    - **Styles**: Estilos globales.
+    - **App.js**: Archivo del componente raíz
